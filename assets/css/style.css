@@ -1,0 +1,445 @@
+* {
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+.row::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+[class*="col-"] {
+    float: left;
+    /*border: 1px solid red;*/
+}
+
+.col-1 {width: 8.33%;}
+.col-2 {width: 16.66%;}
+.col-3 {width: 25%;}
+.col-4 {width: 33.33%;}
+.col-5 {width: 41.66%;}
+.col-6 {width: 50%;}
+.col-7 {width: 58.33%;}
+.col-8 {width: 66.66%;}
+.col-9 {width: 75%;}
+.col-10 {width: 83.33%;}
+.col-11 {width: 91.66%;}
+.col-12 {width: 100%;}
+
+a {
+	color: #777777;
+	text-decoration: none;
+}
+a:visited {
+	color: #777777;
+}
+
+a:hover {
+	color: #4c4b4b;
+}
+
+body {
+	position: relative;
+	max-width: 960px;
+	height: 800px;
+	background-image: url("../images/concrete_subtle.png");
+	margin: auto;
+}
+
+#header {
+	background: #fff;
+	height: 70px;
+	font-family: 'Georgia', Times, Times New Roman, serif;
+	color: #777777;
+	border-bottom: 2px solid #cccccc;
+}
+
+#brand {
+	height: 70px;
+}
+
+#brand h1 {
+	width: 240px;
+	padding: 17px;
+	margin: 0px 0px 0px 40px;
+	font-size: 2.2em;
+	background: #4aaaa5;
+	text-align: center;
+	color: #fff;
+}
+
+#nav {
+	height: 70px;
+	padding-right: 50px;
+	text-align: right;
+	line-height: 70px;
+}
+
+#nav span {
+	padding: 5px;
+	font-size: 1.05em;
+}
+
+#connect {
+	background: #fff;
+	color: #4aaaa5;
+	text-align: center;
+	font-size: 1.4em;
+	margin: 35px 35px 15px 15px;
+	padding: 15px;
+}
+
+#connect h3 {
+	font-weight: bold;
+	margin-bottom: 14px;
+}
+
+#connect hr {
+	border:2px solid #dddddd;
+}
+
+#connect img {
+	margin:	5px 2px 0px 2px;
+}
+
+#footer {
+	position: relative;
+	bottom: 0px;
+	background: #666666;
+	height: 70px;
+	text-align: center;
+	line-height: 70px;
+	color: #fff;
+	border-top: 2px solid #4aaaa5;
+
+}
+
+
+
+#about {
+	background: #fff;
+	height: 1200px;
+	margin: 35px 15px 15px 35px;
+	padding: 15px;
+	
+}
+
+#about h2 {
+	font-size: 1.5em;
+	font-weight: bold;
+	padding: 0px 0px 5px 15px;
+	color: #4aaaa5;
+}
+
+#about hr {
+	border:2px solid #dddddd;
+	margin-left: 15px;
+	margin-right: 15px;
+}
+
+#about img {
+	float: left;
+	margin: 15px 15px 0px 15px;
+	
+}
+
+#about p {
+	line-height: 150%;
+	margin-left: 15px;
+	margin-right: 15px;
+	padding-top: 10px;
+	text-align: justify; 
+
+}
+
+
+
+#portfolio {
+	background: #fff;
+	height: 590px;
+	margin: 35px 15px 15px 35px;
+	padding: 15px;
+	overflow: auto;
+
+}
+
+#portfolio h2 {
+	font-size: 1.5em;
+	font-weight: bold;
+	padding: 0px 0px 5px 15px;
+	color: #4aaaa5;
+}
+
+#portfolio hr {
+	border:2px solid #dddddd;
+	margin-left: 15px;
+	margin-right: 15px;
+}
+
+#portfolio li {
+	width: 45%;
+	height: 150px;
+	margin: 10px 0px 10px 3.2%;
+	float: left;
+}
+
+#portfolio img {
+	width: 100%;
+	height: 100%;
+}
+
+.portLabel {
+	color: #fff;
+	background-color: #4aaaa5;
+	line-height: 40px;
+	text-align: center;
+	position: relative;
+	bottom: 53px;
+
+}
+
+
+
+#contact {
+	background: #fff;
+	height: 540px;
+	margin: 35px 15px 15px 35px;
+	padding: 15px;
+	overflow: auto;
+}
+
+#contact h2 {
+	font-size: 1.5em;
+	font-weight: bold;
+	padding: 0px 0px 5px 15px;
+	color: #4aaaa5;
+}
+
+#contact hr {
+	border:2px solid #dddddd;
+	margin-left: 15px;
+	margin-right: 15px;
+}
+
+#contact form {
+	margin-left: 15px;
+	color: #777777;
+}
+
+#contact form input {
+	color: #777777;
+	width: 97%;
+	margin-bottom: 10px;
+	margin-top: 3px;
+}
+
+#contact span {
+	font-size: 1.1em;
+}
+
+#name {
+	height: 30px;
+	margin-bottom: 5px;
+}
+
+#name[type=text] {
+	padding-left: 5px;
+	font-size: 13px; 
+	opacity: 0.7;
+}
+
+#email[type=text] {
+	padding-left: 5px; 
+	font-size: 13px;
+	opacity: 0.7;
+}
+
+#message[type=text] {
+	line-height: 0px;
+}
+
+#email {
+	height: 30px;
+	margin-bottom: 5px;	
+}
+
+#message {
+	height: 185px;
+	margin-bottom: 10px;
+	
+}
+
+#submit[type=submit] {
+	color: #fff;
+	width: 70px;
+ 	height: 30px;
+ 	background: #4aaaa5;
+ 	border: none;
+ 	margin-top: 5px;
+ 	border-radius: 2px;
+ 	font-size: 13px;
+}
+
+#submit:hover {
+	cursor: pointer;
+	background-color: #3a8783;
+}
+
+@media only screen and (max-width: 980px) {
+
+    body {
+        width: 85%;
+        height: 1000px;
+        margin: auto;
+    }
+
+    #about {
+        height: auto;
+    }
+
+    #about img {
+        width: 90%;
+        height: 100%;
+        margin: 15px 5% 20px 5%;
+        
+    }
+
+    #about p {
+        margin-left: 20px;
+        margin-right: 20px;
+
+    }
+
+    #connect img {
+        margin: 5px 0px 0px 0px;
+        height: 45px;
+    }
+
+    #portfolio {
+        height: 750px;
+    }
+
+    #portfolio li {
+        width: 90%;
+        height: 250px;
+        margin: 15px 5% 20px 5%;
+    }
+
+    #portfolio img {
+        width: 100%;
+        height: 100%;
+    }
+
+    .portLabel {
+
+    }
+}
+
+
+@media only screen and (max-width: 768px) {
+
+    [class*="col-"] {
+        width: 100%;
+    }
+
+    body {
+        height: 1150px;
+    }
+
+    #nav {
+        padding-right: 25px;
+        position: absolute;
+    }
+
+    #about {
+        margin: 35px;
+    }
+
+    #about img {
+        width: 45%;
+        margin: 15px 15px 0px 15px;
+    }
+
+    #portfolio {
+        height: 700px;
+        margin: 35px;
+    }
+
+    #portfolio li {
+        width: 45%;
+        height: 180px;
+        margin: 10px 0px 10px 3.2%;
+        float: left;
+    }
+
+    #connect {
+        margin: 35px;
+        padding: 20px 35px 20px 35px;
+        text-align: left;
+    }
+
+    #connect img {
+        height: 51px;
+    }
+
+    #contact {
+        margin: 35px;
+    }
+}
+
+
+@media only screen and (max-width: 640px) {
+    /* For mobile phones: */
+    body {
+        height: 1200px;
+    }
+
+    #brand h1 {
+        width: 100%;
+        margin: 0;
+    }
+
+    #nav {
+        text-align: center;
+        position: relative;
+        background: #fff;
+        margin-bottom: 20px;
+        padding: 0px;
+        height: 40px;
+        line-height: 40px;
+    }
+
+    #about {
+        margin: 25px;
+        height: auto;
+    }
+
+    #about img {
+        width: 90%;
+        margin: 15px 5% 15px 5%;
+    }
+
+    #connect {
+        margin: 25px;
+        text-align: center;
+    }
+
+    [class*="col-"] {
+        width: 100%;
+    }
+
+    #portfolio {
+        margin: 25px;
+    }
+
+    #portfolio li {
+        width: 90%;
+        height: 200px;
+        margin: 15px 5% 20px 5%;
+    }
+
+    #contact {
+        margin: 25px;
+    }
+}
